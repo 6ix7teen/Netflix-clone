@@ -1,0 +1,964 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.first-header{
+    background-image: url('./image/background\ image.jpg');
+    background-size: cover;
+
+}
+
+
+/* Header styling */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; 
+    /* width: 80%; */
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.sign-in-btn {
+    color: #fff;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styling */
+.hero-section{
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    font-weight: 900;
+    font-size: 56px;
+    /* line-height: 70px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.email-container {
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.get-started-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    input[type="email"] {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="email"] {
+        width: 80%;
+    }
+}
+ 
+/* --------rr  */
+.Section2{
+    height: 500px;
+    background-color: black;
+}
+.linear{
+    /* background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    height: 80px; */
+    
+    
+
+}
+
+.curve-container{
+    height: 100px;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.trendingnow{
+    padding-left: 120px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.dropdown{
+padding-left: 120px;
+/* width: 50px; */
+}
+
+.btn-secondary{
+    --bs-btn-bg: #6c757d00;
+}
+/* button{
+    font-size: 10px;
+} */
+
+.btn{
+    width: 100px;
+}
+
+.dropdown2{
+padding-left: 130px;
+margin-top: -38px;
+}
+
+
+/* ---  */
+$itemGrow: 1.2;
+$duration: 250ms;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+h1 {
+  font-family: Arial;
+  color: red;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,100%);
+  overflow:hidden;
+  scroll-behavior: smooth;
+
+  section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+    
+    .item {
+      padding: 0 2px;
+      transition: $duration all;
+      
+      &:hover { 
+        margin: 0 40px;
+        transform: scale(1.2);
+      }
+      
+    }
+    
+    a {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      background:rgb(0,0,0);
+      width: 80px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+      
+      &:nth-of-type(1) {
+        top:0; bottom:0; left:0;
+        background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      &:nth-of-type(2) {
+        top:0; bottom:0; right: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      
+    }
+    
+  }
+}
+
+// Remove the arrow for Mobile
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display:none;
+  }
+}
+/* hhhhhhh */
+ <style>
+      *p{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+      .containercard{
+          /* border: medium solid red; */
+          display: inline-flex;
+          /* margin-left: 90px; */
+          /* justify-content: space-around; */
+          align-items: center;
+          /* gap: 0.5rem; */
+          overflow-wrap: break-word;
+         flex-wrap: wrap;
+         flex-direction: row;
+         display: -webkit-inline-flex;
+         padding-top: 13px;
+         width: 100%;
+         gap: 1rem;
+         /* padding-right: 25px; */
+         
+         
+  
+      }
+  
+      .card1{
+          width: 285px;
+          width: 23%;
+          height: 320px;
+          /* border: medium solid red; */
+          border-radius: 20px;
+          background-image: linear-gradient(155deg,rgb(26,33,69),rgb(32,15,25));
+          padding-top: 15px;
+         
+          
+      }
+  
+  
+      .card2{
+         width: 285px;
+         width: 23%;
+          height: 320px;
+          /* border: medium solid red; */
+          border-radius: 20px;
+          background-image: linear-gradient(155deg,rgb(26,33,69),rgb(32,15,25));
+          padding-top: 15px;
+      }
+  
+  
+      .card3{
+         width: 285px;
+         width: 23%;
+          height: 320px;
+          /* border: medium solid red; */
+          border-radius: 20px;
+          background-image: linear-gradient(155deg,rgb(26,33,69),rgb(32,15,25));
+          padding-top: 15px;
+      }
+  
+      .card4{
+         width: 285px;
+         /* width: 23%; */
+          height: 320px;
+          /* border: medium solid red; */
+          border-radius: 20px;
+          background-image: linear-gradient(155deg,rgb(26,33,69),rgb(32,15,25));
+          padding-top: 15px;
+      }
+  
+  
+      h3{
+      font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
+         font-size: 24px;
+         font-weight: 500;
+         color:rgb(255, 255, 255) ;
+         text-wrap: wrap;
+         /* margin-left: 90px; */
+  
+      }
+  
+      .bodyofall{
+         background-color: black;
+         padding-left: 5%;
+         padding-right: 5%;
+      }
+  
+  
+      .headingText{
+      font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      color:rgb(255, 255, 255) ;
+      text-wrap: wrap;
+      padding-left: 20px;
+      }
+  
+      .textNetflix{
+      font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      text-wrap: wrap;
+      padding-left: 20px;   
+      padding-right: 6px;
+      margin-top: -10px;
+      }
+
+      .textnext2{
+      color: white;
+      }
+      
+
+
+
+  .svg{
+      margin-top: 65px;
+      margin-left: 155px;
+  }
+  
+  .svg2{
+      margin-top: 65px;
+      margin-left: 155px;
+  }
+  
+  .svg3{
+      margin-top: 85px;
+      margin-left: 155px; 
+  }
+  
+  .svg4{
+      margin-top: 34px;
+      margin-left: 155px;
+  }
+  @media(max-width:1320px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 48%;
+          height: 250px;
+      }
+  
+      .card2{
+          width: 48%;
+          height: 250px;
+      }
+  
+      .card3{
+          width: 48%;
+          height: 250px;
+      }
+  
+      .card4{
+          width: 48%;
+          height: 250px;
+      }
+  
+      .svg{
+          margin-left: 80%;  
+          margin-top: 3em;
+      }
+  
+      .svg2{
+          margin-left: 80%; 
+          /* margin-top: 1%;  */
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 80%;  
+          margin-top: 3em;
+      }
+  
+      .svg4{
+          margin-left: 80%;  
+          margin-top: 2em;
+      }
+  }
+  @media(max-width: 1285px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 49%;
+          height: 250px;
+      }
+  
+      .card2{
+          width: 49%;
+          height: 250px;
+      }
+  
+      .card3{
+          width: 49%;
+          height: 250px;
+      }
+  
+      .card4{
+          width: 49%;
+          height: 250px;
+      }
+  
+      .svg{
+          margin-left: 80%;  
+          margin-top: 3em;
+      }
+  
+      .svg2{
+          margin-left: 80%; 
+          margin-top: 1%; 
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 80%;  
+          margin-top: 3em;
+      }
+  
+      .svg4{
+          margin-left: 80%;  
+          margin-top: 2em;
+      }
+  }
+  
+  @media(max-width: 1074px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 47%;
+          height: 270px;
+      }
+  
+      .card2{
+          width: 47%;
+          height: 270px;
+      }
+  
+      .card3{
+          width: 47%;
+          height: 270px;
+      }
+  
+      .card4{
+          width: 47%;
+          height: 270px;
+      }
+  
+      .svg{
+          margin-left: 70%;  
+          margin-top: 3em;
+      }
+  
+      .svg2{
+          margin-left: 70%; 
+          /* margin-top: 2em; */
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 70%;  
+          margin-top: 3em;
+      }
+  
+      .svg4{
+          margin-left: 70%;  
+          margin-top: 3em;
+  
+      }
+  }
+  
+  
+  @media(max-width: 1006px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 48%;
+          height: 270px;
+      }
+  
+      .card2{
+          width: 48%;
+          height: 270px;
+      }
+  
+      .card3{
+          width: 48%;
+          height: 270px;
+      }
+  
+      .card4{
+          width: 48%;
+          height: 270px;
+      }
+  
+      .svg{
+          margin-left: 70%;  
+          margin-top: 3em;
+      }
+  
+      .svg2{
+          margin-left: 70%; 
+          margin-top: 2em;
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 70%;  
+          margin-top: 3em;
+      }
+  
+      .svg4{
+          margin-left: 70%;  
+          margin-top: 3em;
+  
+      }
+  
+      @media(max-width: 960px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card2{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card3{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card4{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .svg{
+          margin-left: 85%;
+              margin-top: 5em;
+      }
+  
+      .svg2{
+          margin-left: 85%;
+          margin-top: 5em;
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 85%;
+          margin-top: 5em;
+      }
+  
+      .svg4{
+          margin-left: 85%;
+              margin-top: 5em;
+  
+      }
+  }
+  @media(max-width: 700px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card2{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card3{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card4{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .svg{
+          margin-left: 85%;
+              margin-top: 4em;
+      }
+  
+      .svg2{
+          margin-left: 85%;
+          margin-top: 4em;
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 85%;
+          margin-top: 4em;
+      }
+  
+      .svg4{
+          margin-left: 85%;
+              margin-top: 4em;
+  
+      }
+  }
+  
+  @media(max-width: 510px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card2{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card3{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card4{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .svg{
+          margin-left: 75%;
+              margin-top: 3em;
+      }
+  
+      .svg2{
+          margin-left: 75%;
+          margin-top: 3em;
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 75%;
+          margin-top: 3em;
+      }
+  
+      .svg4{
+          margin-left: 75%;
+              margin-top: 3em;
+  
+      }
+  }
+  
+  @media(max-width: 488px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card2{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card3{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card4{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .svg{
+          margin-left: 70%;
+              margin-top: 3em;
+      }
+  
+      .svg2{
+          margin-left: 70%;
+          margin-top: 2em;
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 70%;
+          margin-top: 3em;
+      }
+  
+      .svg4{
+          margin-left: 70%;
+              margin-top: 3em;
+  
+      }
+  }
+  
+  @media(max-width: 312px){
+      .containercard{
+          /* flex-wrap: nowrap; */
+          /* padding: 0 9.25em; */
+          display: inline-flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      .card1{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card2{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card3{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .card4{
+          width: 100%;
+          height: 270px;
+      }
+  
+      .svg{
+          margin-left: 60%;
+              margin-top: 1em;
+      }
+  
+      .svg2{
+          margin-left: 60%;
+          margin-top: -1em;
+          /* margin-bottom: 2.5em; */
+      }
+  
+      .svg3{
+          margin-left: 60%;
+          margin-top: -1em;
+      }
+  
+      .svg4{
+          margin-left: 60%;
+              margin-top: -1em;
+  
+      }
+  }
+  }
+  /* accordion  */
+  
+.accod{
+    --bs-accordion-btn-focus-box-shadow:none;
+    padding-right: 5%;
+ }
+ .accordion-button::after{
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>');
+      transform: scale(2.9);
+  }
+  .accordion-button:not(.collapsed)::after{
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>');
+    transform: rotate(45deg) scale(2.9);
+  }
+  .car1{
+    display:flex;
+    margin-inline: auto;     
+  }
+
+
+  /* footer  */
+
+footer {
+    background-color: black ;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.email-signup h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.email-signup form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.email-signup input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    width: 70%;
+    max-width: 500px;
+    background-color: #333;
+    color: white;
+}
+
+.email-signup button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.email-signup button:hover {
+    background-color: #f40612;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-column {
+    margin: 0 15px;
+}
+
+.footer-column a {
+    color: #757575;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.language-select {
+    margin-top: 20px;
+}
+
+.language-select select {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #757575;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+
+    .email-signup form {
+        flex-direction: column;
+    }
+
+    .email-signup input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
